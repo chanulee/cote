@@ -37,7 +37,7 @@ Check out fritzing file for more information.
 - Do not build oF app when arduino Serial Monitor is on! Upload arduino -> Run oF -> Open arduino Serial Monitor
 ## 5. Credits (Teammates)
 - Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
-- Virtual prototyping and visual design by Poh Asdathorn (GIDv / Keio Media Design)
+- Virtual prototyping and visual design mainly by Poh Asdathorn (GIDv / Keio Media Design)
 ---
 **Cyber Physical Systems, October-November 2023**    
 Advisor Dr. Rebecca Stewart, Charlotte Slingsby, Dr Shayan Sharifi   
