@@ -27,15 +27,18 @@ Check out fritzing file for more information.
 - oF ofxOsc
 - oF ofxGui (for Motor Testing)
 - wekinator
-- visionOSC
+- visionOSC [go to repo](https://github.com/LingDong-/VisionOSC)
 - touchDesigner
-## 3. References
+## 3. visionOSC data structure
+Through several experiments with processing and wekinator OSC input monitor, I mapped out datapoints of [LingDong's visionOSC](https://github.com/LingDong-/VisionOSC).  
+Check out [visionOscDatapoints folder]()
+## 4. References
 1. ofxOsc OSC Message documentaiton [openframeworks.cc](https://openframeworks.cc/documentation/ofxOsc/ofxOscMessage/)
 2. ofxOsc bundling and parsing [forum.openframeworks.cc](https://forum.openframeworks.cc/t/osc-bundle-help/15404)
 3. Based on mechanical Design by H. Segerman [Paper](https://archive.bridgesmathart.org/2022/bridges2022-313.pdf)
-## 4. Memo / Trial & Error
+## 5. Memo / Trial & Error
 - Do not build oF app when arduino Serial Monitor is on! Upload arduino -> Run oF -> Open arduino Serial Monitor
-## 5. Credits (Teammates)
+## 6. Credits (Teammates)
 - Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
 - Virtual prototyping and visual design mainly by Poh Asdathorn (GIDv / Keio Media Design)
 ---
