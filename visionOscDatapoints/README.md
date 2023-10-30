@@ -7,6 +7,6 @@ Datapoint map for LingDong's visionOSC [go to repo](https://github.com/LingDong-
 - There's datapoint description for poseOSC and handOSC but no enough documentation of faceOSC
 - Some explanation were not written correctly, 
 ## 2. File structure
-- **Modified processing file** that maps out the number of each datapoints on the face
+- **Modified processing file** that maps out the number of each datapoints on the face [original code at LingDong's repo](https://github.com/LingDong-/VisionOSC/tree/main/demos/VisionOSCProcessingReceiver)
 - **csv file** with all the data points
 - **screenshot** of wekinator input monitor
