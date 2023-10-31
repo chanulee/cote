@@ -5,10 +5,10 @@ void ofApp::setup(){
     ofSetBackgroundColor(0, 0, 0);
     ofSetWindowTitle("Servo Control Panel");
     
-    serial.setup("/dev/cu.usbmodem2101", 115200);
+    serial.setup("/dev/cu.usbmodem101", 115200);
     
     gui.setup();
-    gui.add(leftSlider.setup("Left Angle:", 135, 0, 254));
+    gui.add(leftSlider.setup("Left Angle:", 127, 0, 254));
 }
 
 //--------------------------------------------------------------
@@ -24,7 +24,6 @@ void ofApp::draw(){
     ofSetColor(255, 255, 255);
     ofFill();
     ofDrawCircle(leftSlider, 150, 30);
-    
 }
 
 //--------------------------------------------------------------
