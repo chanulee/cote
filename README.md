@@ -20,9 +20,9 @@ With this ‘côte’ in the room, it can subtly make the space more vibrant and
 ### 2-1. Hardware
 Check out fritzing file for more information.
 - Arduino Nano Every (Arduino Mega 2560)
-- Micro Servo MG90S (Black small one) * 6
+- Micro Servo MG90S (Black small one) * 6 (5V)
 - Logitech C270 (HD 720p, proven to work as a video grabbing webcam) [Amazon](https://www.amazon.co.uk/dp/B01BGBJ8Y0?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-- PCA9685 Motor Driver (for power delivery)
+- PCA9685 Motor Driver (for power delivery, should be connected to power and arduino)
 ### 2-2. Software Requirements
 - oF ofxOsc
 - oF ofxGui (for Motor Testing)
