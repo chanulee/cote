@@ -31,7 +31,7 @@ Check out fritzing file for more information.
 - touchDesigner
 ## 3. visionOSC data structure
 Through several experiments with processing and wekinator OSC input monitor, I mapped out datapoints of [LingDong's visionOSC](https://github.com/LingDong-/VisionOSC).  
-Check out [visionOscDatapoints folder]()
+Check out [visionOscDatapoints folder](https://github.com/chanulee/cote-bloom/tree/main/appendix/visionOscDatapoints)
 ## 4. References
 1. ofxOsc OSC Message documentaiton [openframeworks.cc](https://openframeworks.cc/documentation/ofxOsc/ofxOscMessage/)
 2. ofxOsc bundling and parsing [forum.openframeworks.cc](https://forum.openframeworks.cc/t/osc-bundle-help/15404)
