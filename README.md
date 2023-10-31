@@ -40,7 +40,7 @@ Check out [visionOscDatapoints folder](https://github.com/chanulee/cote-bloom/tr
 - Do not build oF app when arduino Serial Monitor is on! Upload arduino -> Run oF -> Open arduino Serial Monitor
 ## 6. Credits (Teammates)
 - Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
-- Virtual prototyping and visual design mainly by Poh Asdathorn (GIDv / Keio Media Design)
+- Virtual prototyping, visual design and circuit diagram mainly by Poh Asdathorn (GIDv / Keio Media Design)
 ---
 **Cyber Physical Systems, October-November 2023**    
 Advisor Dr. Rebecca Stewart, Charlotte Slingsby, Dr Shayan Sharifi   
