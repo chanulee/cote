@@ -1,5 +1,4 @@
 # visionOSC data structure
-## TLDR
 ![](https://github.com/chanulee/cote-bloom/blob/main/appendix/visionOscDatapoints/hero.jpg)
 This is datapoint map/guide for faceOSC in LingDong's visionOSC [go to repo](https://github.com/LingDong-/VisionOSC).
 - 232 inputs for one face, 461 inputs for two faces.
