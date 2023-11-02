@@ -6,16 +6,10 @@ During the pandemic, people became accustomed to virtual interactions. Driven by
 In the Korean language, Hangeul, there's a phrase, "대화를 꽃피우다," which translates to 'blooming the conversation.' It's a beautiful term that likens a conversation to a flower.
   
 With this ‘côte’ in the room, it can subtly make the space more vibrant and delightful.
-## 1. Features
-- OSC Communication (visionOSC - oF - wekinator - oF)
-- Multiple OSC inputs
-- OSC input parsing
-- Serial Communication (oF - Arduino)
-- Motor Control
-- Higher resolution
-- Mapping
-- Breathing motion
-- Blooming motion
+## 1. File Directory
+- appendix
+- testcode
+- demonov01
 ## 2. Specimen
 ### 2-1. Hardware
 Check out fritzing file for more information.
@@ -28,18 +22,26 @@ Check out fritzing file for more information.
 - oF ofxGui (for Motor Testing)
 - wekinator
 - visionOSC [go to repo](https://github.com/LingDong-/VisionOSC)
-- touchDesigner
+- touchDesigner (not yet)
+### 2-3. Features
+- OSC Communication (visionOSC - wekinator - oF)
+- Multiple OSC inputs (trying)
+- OSC input parsing (works, but trying further)
+- Serial Communication (oF - Arduino)
+- Motor Control
+- Higher resolution (room to improve)
+- Breathing motion
 ## 3. visionOSC data structure
 Through several experiments with processing and wekinator OSC input monitor, I mapped out datapoints of [LingDong's visionOSC](https://github.com/LingDong-/VisionOSC).  
 Check out [visionOscDatapoints folder](https://github.com/chanulee/cote-bloom/tree/main/appendix/visionOscDatapoints)
 ## 4. References
 1. ofxOsc OSC Message documentaiton [openframeworks.cc](https://openframeworks.cc/documentation/ofxOsc/ofxOscMessage/)
 2. ofxOsc bundling and parsing [forum.openframeworks.cc](https://forum.openframeworks.cc/t/osc-bundle-help/15404)
-3. Based on mechanical Design by H. Segerman [Paper](https://archive.bridgesmathart.org/2022/bridges2022-313.pdf)
+3. Based on research by H. Segerman [Paper](https://archive.bridgesmathart.org/2022/bridges2022-313.pdf)
 ## 5. Memo / Trial & Error
 - Do not build oF app when arduino Serial Monitor is on! Upload arduino -> Run oF -> Open arduino Serial Monitor
 ## 6. Credits (Teammates)
-- Hardware design engineering mainly by Jinhak Lee (IDE 23/25 | jinhak.lee23@imperial.ac.uk)
+- Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
 - Virtual prototyping, visual design and circuit diagram mainly by Poh Asdathorn (GIDv / Keio Media Design)
 ---
 **Cyber Physical Systems, October-November 2023**    
