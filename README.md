@@ -7,9 +7,11 @@ In the Korean language, Hangeul, there's a phrase, "대화를 꽃피우다," whi
   
 With this ‘côte’ in the room, it can subtly make the space more vibrant and delightful.
 ## 1. File Directory
-- appendix
-- testcode
-- demonov01
+- demonov01: For final demo of Cyber Physical Systems module happened in 01 Nov 2023. oF, ino, wek files + recreation guide
+- testcode: QC tools made for the project: osc communication, serial communication and motor control
+- trials: Tried to develop it part-by-part, some succeeded and some didn't. For future works.
+- resources: Images and circuit diagram
+- appendix: About visionOSC's face datapoints
 ## 2. Specimen
 ### 2-1. Hardware
 Check out fritzing file for more information.
@@ -38,8 +40,14 @@ Check out [visionOscDatapoints folder](https://github.com/chanulee/cote-bloom/tr
 1. ofxOsc OSC Message documentaiton [openframeworks.cc](https://openframeworks.cc/documentation/ofxOsc/ofxOscMessage/)
 2. ofxOsc bundling and parsing [forum.openframeworks.cc](https://forum.openframeworks.cc/t/osc-bundle-help/15404)
 3. Based on research by H. Segerman [Paper](https://archive.bridgesmathart.org/2022/bridges2022-313.pdf)
-## 5. Memo / Trial & Error
-- Do not build oF app when arduino Serial Monitor is on! Upload arduino -> Run oF -> Open arduino Serial Monitor
+## 5. Future Works
+- visionOSC & TouchDesigner --multiOSC--> oF --modifiedOSC--> wekinator --class--> oF --serial--> Arduino
+- If openframeworks gets data directly from OSC not wekinator, we can make some decision before getting to the wekinator part - for example, maybe we can use certain model in certain condition - and we can exclude non-related data from the original OSC so machine learning part would be much more accurate with faster training/learning
+- motor angle data 0-254 is mapped to 0-270 and finally about 1000-2000, but I'm still using 0-254 part so the resolution is quite low.
+- nothing happens if there's nobody or one person in the cam view, everything stops. maybe we can add breathing motion when nothing is detected
+- getting input from multiple addresses works in oF
+- Selecting certain relevant OSC messages and then make them into a new message, sending it to wekinator - receiving and making new message kind of works, but the sending timing makes the message's size vary.
+- Simple keypressedSerial is working on both Arduino nano and Mega - but servoAngleSerial doesn't work on Mega.
 ## 6. Credits (Teammates)
 - Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
 - Virtual prototyping, visual design and circuit diagram mainly by Poh Asdathorn (GIDv / Keio Media Design)
