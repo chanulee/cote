@@ -27,8 +27,9 @@ Check out fritzing file for more information.
 - touchDesigner (not yet)
 ### 2-3. Features
 - OSC Communication (visionOSC - wekinator - oF)
-- Multiple OSC inputs (trying)
-- OSC input parsing (works, but trying further)
+- Multiple OSC inputs
+- OSC input parsing
+- Combine multiple OSC messages and send (trying)
 - Serial Communication (oF - Arduino)
 - Motor Control
 - Higher resolution (room to improve)
