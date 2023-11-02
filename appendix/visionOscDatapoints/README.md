@@ -3,6 +3,17 @@
 This is datapoint map/guide for faceOSC in LingDong's visionOSC [go to repo](https://github.com/LingDong-/VisionOSC).
 - 232 inputs for one face, 461 inputs for two faces.
 - Check out the .csv file for the specific datapoint chart.
+- The score data: their numbers are 3, 6, 9...
+- Buffer 0 data: 0, 1, 2
+```
+for (int i = 4; i <= 231; i++) {
+    if (i % 3 != 0) { // Skip scores: 3, 6, 9, 12, 15, 18...
+        int faceData = m.getArgAsInt(i);
+        ofLog() << "facedata: " << faceData;
+        wekMessage.addIntArg(faceData);
+    }
+}
+```
 ## 1. Background
 - There's datapoint description for poseOSC and handOSC but no enough documentation of faceOSC
 - **No information about which data is related to certain part of the face**
