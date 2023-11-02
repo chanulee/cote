@@ -20,8 +20,9 @@ void loop() {
 if (Serial.available()>0) {
     // Serial.println("Serial working");
 
-    //read from oF
+    /*---read from oF---*/
     int serialAngle = Serial.read() - '0' + 48;
+
     int angleMap = map(serialAngle, 0,254,0,270); //0 to 135 and 135 to 270
 
     servoSync(angleMap, 15, 16, 17, 18); //small right
@@ -29,6 +30,7 @@ if (Serial.available()>0) {
   } 
 }
 
+/*--- Simple servo control ---*/
 void servoControl(int leftAngle, int leftMotor, int rightMotor){
   if (leftAngle > 135) {
     servo.detach();
@@ -47,21 +49,14 @@ void servoControl(int leftAngle, int leftMotor, int rightMotor){
   }
 }
 
-void servoSync(int leftAngle, int lM1, int rM1, int lM2, int rM2){
+/*--- Move multiple motors together---*/
+void servoSync(int leftAngle, int lM1, int rM1, int lM2, int rM2, int lM3, int rM3){
+  servoSetDetach();
   if (leftAngle > 135) {
-    servoSetDetach() 
-    servoSet1.attach(lM1);
-    servoSet2.attach(lM2);
-    servoSet1.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
-    servoSet2.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
+    servoLeftMove(leftAngle, lM1, lM2, lM3);
   } else {
     int rightAngle = leftAngle;
-    // Serial.println(rightAngle);
-    servoSetDetach()
-    servoSet1.attach(rM1);
-    servoSet2.attach(rM2);
-    servoSet1.writeMicroseconds(map(rightAngle,0,135,600,2000));
-    servoSet2.writeMicroseconds(map(rightAngle,0,135,600,2000));
+    servoRightMove(rightAngle,rM1, rM2, rM3 )
   }
 }
 
@@ -71,10 +66,28 @@ void servoSetDetach() {
     servoSet3.detach();
 }
 
-void breathe(int leftMotor, int rightMotor){
-// void bloom(){
-  bool bloom = true;
+void servoLeftMove(int leftAngle, int lM1, int lM2, int lM3){
+    servoSet1.attach(lM1);
+    servoSet2.attach(lM2);
+    servoSet3.attach(lM3);
 
+    servoSet1.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
+    servoSet2.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
+    servoSet3.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
+}
+
+void servoRightMove(int rightAngle, int rM1, int rM2, int rM3){
+    servoSet1.attach(rM1);
+    servoSet2.attach(rM2);
+    servoSet3.attach(rM3);
+
+    servoSet1.writeMicroseconds(map(rightAngle,0,135,600,2000));
+    servoSet2.writeMicroseconds(map(rightAngle,0,135,600,2000));
+    servoSet3.writeMicroseconds(map(rightAngle,0,135,600,2000));
+}
+
+// void breathe(int leftMotor, int rightMotor){
+void breathe(){
   unsigned long currentMillis = millis();
 
   if (currentMillis - previousMillis >= interval) {
@@ -86,8 +99,8 @@ void breathe(int leftMotor, int rightMotor){
       i--;
       if (i <= 45) ascending = true;
     }
-    servoControl(i, leftMotor, rightMotor);
-    // Serial.println(i);
+    // servoControl(i, leftMotor, rightMotor);
+    Serial.println(i);
   }
 
 }
