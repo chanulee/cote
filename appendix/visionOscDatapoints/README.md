@@ -14,5 +14,6 @@ This is datapoint map/guide for faceOSC in LingDong's visionOSC [go to repo](htt
 - **screenshot** of wekinator input monitor
 ---
 Chanwoo Lee  
-MSc Innovation Design Engineering, Imperial College London  
+MSc Innovation Design Engineering,  
+Imperial College London  
 Oct 2023
