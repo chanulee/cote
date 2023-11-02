@@ -22,11 +22,6 @@ Check out fritzing file for more information.
 2. Open **wekinator** app, open(CMD+O) a machine learning model cote2people, press 'Start Listening' and see if the data input is working, and 'Run' 
 3. Open **Arduino** app, open coteClass.ino and upload it to arduino nano
 4. Open **wek2ardu.xcodepro**, check if the arduino serial monitor is closed, and then build it
-## 4. Future Works
-- visionOSC & TouchDesigner --multiOSC--> oF --modifiedOSC--> wekinator --class--> oF --serial--> Arduino
-- If openframeworks gets data directly from OSC not wekinator, we can make some decision before getting to the wekinator part - for example, maybe we can use certain model in certain condition - and we can exclude non-related data from the original OSC so machine learning part would be much more accurate with faster training/learning
-- motor angle data 0-254 is mapped to 0-270 and finally about 1000-2000, but I'm still using 0-254 part so the resolution is quite low.
-- nothing happens if there's nobody or one person in the cam view, everything stops. maybe we can add breathing motion when nothing is detected 
 ---
 **Cyber Physical Systems, October-November 2023**    
 Advisor Dr. Rebecca Stewart, Charlotte Slingsby, Dr Shayan Sharifi   
