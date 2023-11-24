@@ -1,6 +1,7 @@
 # cote
+![Image](https://github.com/chanulee/cote/blob/3080049a896e6b2266ff9bd556552ba648a35018/resources/hero.jpeg)
 **_What is the value of telepresence if actual presence is neglected?_**  
-
+  
 During the pandemic, people became accustomed to virtual interactions. Driven by this shift, emerging technologies like Virtual Reality are focusing on translating real-world experiences entirely into the digital realm. Meanwhile, face-to-face interactions in the real world are dwindling. As an example, we often observe families in cafes who are each just looking at their smartphone without any conversation. What is the value of telepresence if actual presence is neglected? Tim Cook once said, if you're staring at smartphones more than into people's eyes, you're doing it wrong. We aim to gently promote humane and analog interaction through calm physical interfaces rather than attention-grabbing displays.  
   
 In the Korean language, Hangeul, there's a phrase, "대화를 꽃피우다," which translates to 'blooming the conversation.' It's a beautiful term that likens a conversation to a flower.
