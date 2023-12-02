@@ -1,8 +1,8 @@
 # System Guide for Cote
 This system guide is for 
-1. [Software Setup](##1)
-2. [Hardware Installation](##2)
-3. [Maintenance](##3)
+1. [Software Setup](#1)
+2. [Hardware Installation](#2)
+3. [Maintenance](#3)
 ## 1. Software Setup
 ### Essential Softwares
 As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple computers for the recreation. (If it's not possible, use faceOSC instead)  
