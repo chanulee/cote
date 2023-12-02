@@ -1,5 +1,5 @@
 # cote
-![Image](https://github.com/chanulee/cote/blob/3080049a896e6b2266ff9bd556552ba648a35018/resources/hero.jpeg)
+![Image](resources/hero.jpeg)
 **_What is the value of telepresence if actual presence is neglected?_**  
   
 During the pandemic, people became accustomed to virtual interactions. Driven by this shift, emerging technologies like Virtual Reality are focusing on translating real-world experiences entirely into the digital realm. Meanwhile, face-to-face interactions in the real world are dwindling. As an example, we often observe families in cafes who are each just looking at their smartphone without any conversation. What is the value of telepresence if actual presence is neglected? Tim Cook once said, if you're staring at smartphones more than into people's eyes, you're doing it wrong. We aim to gently promote humane and analog interaction through calm physical interfaces rather than attention-grabbing displays.  
@@ -14,6 +14,7 @@ With this ‘côte’ in the room, it can subtly make the space more vibrant and
 - resources: Images and circuit diagram
 - appendix: About visionOSC's face datapoints
 ## 2. Specimen
+![Image](resources/sysdia.png)
 ### 2-1. Hardware
 Check out fritzing file for more information.
 - Arduino Nano Every (Arduino Mega 2560)
