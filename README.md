@@ -55,15 +55,6 @@ Check out [visionOscDatapoints folder](https://github.com/chanulee/cote-bloom/tr
 - Hardware design engineering mainly by Jinhak Lee (IDE 23/25)
 - Virtual prototyping, visual design and circuit diagram mainly by Poh Asdathorn (GIDv / Keio Media Design)
 ---
-## Cote for Raspberry Pi
-### Hardware
-- Raspberry Pi 4 (8GB RAM)
-- Arduino Nano Every
-- Logitech C270 (HD 720p, proven to work as a video grabbing webcam) [Amazon](https://www.amazon.co.uk/dp/B01BGBJ8Y0?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-- 15W USB-C Power Supply
-### Software
-- 
----
 **Cyber Physical Systems, October-November 2023**    
 Advisor Dr. Rebecca Stewart, Charlotte Slingsby, Dr Shayan Sharifi   
 MSc Innovation Design Engineering   
