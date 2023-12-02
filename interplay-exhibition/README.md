@@ -1,10 +1,10 @@
 # System Guide for Cote
 This system guide is for 
-- installation 
-- Maintenance
+1. [Software Setup](#1)
+2. [Hardware Installation](#2)
+3. [Maintenance](#3)
 ## 1. Software Setup
 ### Essential Softwares
-![Image](resources/sysdia.png)
 As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple computers for the recreation. (If it's not possible, use faceOSC instead)  
 1. Update your macbook and download Xcode. For this exhibition, I'm using macOS Sonoma and Xcode 15.
 2. Download wekinator [here](http://www.wekinator.org/downloads/)
