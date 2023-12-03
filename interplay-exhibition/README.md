@@ -8,10 +8,21 @@ This system guide is for
 As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple computers for the recreation. (If it's not possible, use faceOSC instead)  
 1. Update your macbook and download Xcode. For this exhibition, I'm using macOS Sonoma and Xcode 15.
 2. Download wekinator [here](http://www.wekinator.org/downloads/)
-3. Download openFrameworks [here](https://openframeworks.cc/download/)
+3. Download openFrameworks [here](https://openframeworks.cc/download/) and move it to main HD directory
 4. Download visionOSC [here](https://github.com/LingDong-/VisionOSC)
 ### Essential Configurations
-1. Check ofxOsc imported to oF project
+1. Download wek2ardu **oF** project from [here](https://github.com/chanulee/cote/tree/d52dcc5865f60ab2a6a312d79a86d98ab8011d35/demonov01), move the entire project to /myApps
+2. Download coteClass.ino and upload it to **arduino**
+3. Open **visionOSC**, turn off every detection except face detection, check port no 9527 (visionOSC to Wekinator) and save.
+4. Connect the **webcam**, change the cammera number to get camera feed - do this every time you set up the system. (Due to refreshing and the fact that the camera number might vary on different system.
+5. Open **wekinator**  
+
+| Command | Input | Output |
+| --- | --- | --- |
+| `port` | 9527 | 12000 (default) |
+| `add` | /faces/arr | /wek/outputs (default) |
+| `#` | 232 | 1 |
+|`description` | visionOSC -> Wek | Wek -> oF, Classifier with 2 classes |
 ## 2. Hardware Installation
 - Macbook Pro 15 + USB-C Charger
 - Control Box
