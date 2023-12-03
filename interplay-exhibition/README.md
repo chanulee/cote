@@ -1,8 +1,8 @@
 # System Guide for Cote
 This system guide is for 
-1. [Software Setup](#1)
-2. [Hardware Installation](#2)
-3. [Maintenance](#3)
+1. Software Setup
+2. Hardware Installation
+3. Maintenance
 ## 1. Software Setup
 ### Essential Softwares
 As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple computers for the recreation. (If it's not possible, use faceOSC instead)  
@@ -26,7 +26,7 @@ As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple co
 ---
 **InterPlay Exhibition Information**   
 - Venue: The Royal Society of Sculptors, Dora House 108 Old Brompton Rd, London SW7 3RA
-- The Design Education Trust, Royal Society of Sculptors
+- The Design Education Trust, Royal Society of Sculptors  
 Do you ever stop to reflect how much the design of motion in everyday ob- jects affects your daily routine? Have you ever thought that behind every-
 day actions there was a creative mind designing the motion?  
 Firstly you will encounter a selection of experimental kinetic objects from ‘Cyber Physical Systems’; a workshop of the joint programmes at Imperial College and the Royal College of Art of Innovation Design Engineering and Global Innovation Design. The devices use Arduino computers and Ai software to propose speculative kinetic designs that translate human behaviour into robotic motion.  
