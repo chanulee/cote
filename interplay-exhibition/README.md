@@ -3,7 +3,7 @@ This system guide is for
 1. Software Setup
 2. Hardware Installation
 3. Maintenance
-## 1. Software Setup
+## 1. Software Setup for exhibition scenario 
 ### Essential Softwares
 As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple computers for the recreation. (If it's not possible, use faceOSC instead)  
 1. Update your macbook and download Xcode. For this exhibition, I'm using macOS Sonoma and Xcode 15.
@@ -25,23 +25,33 @@ As Cote uses Apple's CoreML for face tracking, it is recommended to use Apple co
 |`description` | visionOSC -> Wek | Wek -> oF, Classifier with 2 classes |
 ## 2. Hardware Installation
 - Macbook Pro 15 + USB-C Charger
-- Control Box
-- Motor Modules
+- Control Box (arduino and PCA9685 motor driver) + Motor driver power
+- Cote Modules * 3
 - Webcam (Logitech C270) + USB-A to C Converter
-- PCA9685 Motor Driver (for power delivery, should be connected to power and arduino)
 ## 3. Maintenance
-### In case of...
-- 
+### Setting up the artwork
+Every hardware should be wired
+1. Turn on the macbook, hold 'option' until it gets into bootcamp. Select macOS.
+2. Open **visionOSC**, **wek2arduDebug**, **wekinator** and **macs fan control**
+3. Setting up the webcam: On **visionOSC**, Press "Apply OSC/CAM Settings" button. Webcam's light turns on when successful.
+4. In **wekinator**, press CMD+O or File/Open Project... and select interplay1p.wekproj. See if there's 232 inputs and the input light becomes green.
+5. On the status bar, open **macs fan control**, set the fan speed to 4500 for both fans
+6. Don't close the macbook all the way, it will prevent the heat to vent. Turn down the brightness and gently leave it open about 40 degree.
 ### End of the day...
-1. 
+1. Close **visionOSC**, **wek2arduDebug** and **wekinator**
+2. Turn off the macbook and close it
+### In case of...
+- Hardware stuck: gently push the stuck part to the position it should be
+- Software issue: please contact the creators
 ---
-**InterPlay Exhibition Information**   
+**InterPlay Exhibition Information**
 - Venue: The Royal Society of Sculptors, Dora House 108 Old Brompton Rd, London SW7 3RA
-- The Design Education Trust, Royal Society of Sculptors  
-Do you ever stop to reflect how much the design of motion in everyday ob- jects affects your daily routine? Have you ever thought that behind every-
-day actions there was a creative mind designing the motion?  
+- The Design Education Trust, Royal Society of Sculptors
+  
+Do you ever stop to reflect how much the design of motion in everyday objects affects your daily routine? Have you ever thought that behind everyday actions there was a creative mind designing the motion?  
 Firstly you will encounter a selection of experimental kinetic objects from ‘Cyber Physical Systems’; a workshop of the joint programmes at Imperial College and the Royal College of Art of Innovation Design Engineering and Global Innovation Design. The devices use Arduino computers and Ai software to propose speculative kinetic designs that translate human behaviour into robotic motion.  
 The Design Education Trust invites you to delve into a playful experience aiming to lift your spirits in these dour times. Join us between the 5th and 9th December to see our free INTERPLAY EXHIBITION at the ROYAL SOCIETY of SCULPTORS.
+
 ---
 **Cyber Physical Systems, October-November 2023**    
 Advisor Dr. Rebecca Stewart, Charlotte Slingsby, Dr Shayan Sharifi   
