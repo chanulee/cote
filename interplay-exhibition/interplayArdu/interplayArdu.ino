@@ -29,7 +29,6 @@ int state = 3;
 
 /*---Time Management---*/
 unsigned long previousMillis = 0;
-const long interval = 10;  // Interval in milliseconds
 bool inhale = true;
 
 int wekClass = 0;
@@ -41,6 +40,7 @@ void setup() {
 
 void loop() {
 if (Serial.available()>0) {
+  long interval = 10;  // Interval in milliseconds
   // Serial.println("Serial working");
 
   /*---read from oF---*/
@@ -105,89 +105,10 @@ if (Serial.available()>0) {
         state = 3;
       }
       break;
-
   }
-
-  // switch (state) {
-  //   case Idle:
-  //       Serial.println(state);
-  //     breathe(5, 30); 
-  //     if (wekClass == 2) {
-  //       state = Ascending;
-  //     }
-      
-  //     break;
-  //   case Ascending:
-  //     // Increment i gradually until it reaches 105
-  //         Serial.println(state);
-  //     if (angle < 105) {
-  //       angle++;
-  //     } else {
-  //       state = BigBreathe;
-  //     }
-  //     // if (wekClass == 1) {
-  //     //   state = Descending2;
-  //     // }
-  //     break;
-  //   case BigBreathe:
-  //       Serial.println(state);
-  //     breathe(105, 130);  // Big breathe range
-  //     if (wekClass == 1) {
-  //       state = Descending;
-  //     }
-  //     break;
-  //   case Descending:
-  //       Serial.println(state);
-  //     // Increment i gradually until it reaches 105
-  //     if (angle < 240) {
-  //       angle++;
-  //     } else {
-  //       state = Idle2;
-  //     }
-  //     // if (wekClass == 2) {
-  //     //   state = Ascending2;
-  //     // }
-  //     break;
-  //   case Idle2:
-  //       Serial.println(state);
-  //     breathe(240, 265); 
-  //     if (wekClass == 2) {
-  //       state = Ascending2;
-  //     }
-  //     break;
-  //   case Ascending2:
-  //       Serial.println(state);
-  //     if (angle > 140) {
-  //       angle--;
-  //     } else {
-  //       state = BigBreathe2;
-  //     }
-  //     // if (wekClass == 1) {
-  //     //   state = Descending;
-  //     // }
-  //     break;
-  //   case BigBreathe2:
-  //       Serial.println(state);
-  //     breathe(140, 165);  // Big breathe range
-  //     if (wekClass == 1) {
-  //       state = Descending2;
-  //     }
-  //     break;
-  //   case Descending2:
-  //       Serial.println(state);
-  //     if (angle > 5) {
-  //       angle--;
-  //     } else {
-  //       state = Idle;
-  //     }
-  //     // if (wekClass == 1) {
-  //     //   state = Descending;
-  //     // }
-  //     break;
-  // }
-
-  } 
-  // else {
+} else { 
+    long interval = 20;  // Interval in milliseconds
+    breathe(5, 25); 
   //   switch (state) {
   //   case 3: //Idle
   //     breathe(5, 25); 
@@ -214,7 +135,7 @@ if (Serial.available()>0) {
   //     breathe(5, 25); 
   //     break;
   //   }
-  // }
+  }
 }
 
 void breathe(int minAng, int maxAng) {
@@ -245,26 +166,6 @@ void servoSync(int leftAngle){
     servoRightMove(rightAngle);
   }
 }
-
-// /*--- Simple servo control ---*/
-// void servoControl(int leftAngle, int leftMotor, int rightMotor){
-//   if (leftAngle > 135) {
-//     servo.detach();
-//     servo.attach(leftMotor);
-//     servo.writeMicroseconds(map(leftAngle - 89,47,181,1000,2450));
-//     // Serial.print("L ");
-//     // Serial.println(map(leftAngle - 89,47,181,1000,2000));
-//   } else {
-//     int rightAngle = leftAngle;
-//     // Serial.println(rightAngle);
-//     servo.detach();
-//     servo.attach(rightMotor);
-//     servo.writeMicroseconds(map(rightAngle,0,135,600,2000));
-//     // Serial.print("R ");
-//     // Serial.println(map(rightAngle,0,135,1000,2000));
-//   }
-// }
-
 
 /*--- Basic Controls ---*/
 void servoSetDetach() {
